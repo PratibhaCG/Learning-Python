@@ -55,6 +55,13 @@ elif c == 6:
     print(d)
 
 # Find the square root
-else:
+elif c == 7:
     d = a**b
     print(d)
+
+# If wrong option selected
+elif c == 0
+    print("Wrong option selected")
+
+else c > 7
+    print("Wrong option selected")
