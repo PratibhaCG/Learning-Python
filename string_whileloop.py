@@ -17,9 +17,10 @@ while(i<len(a)):
 print(f"Printing characters of {a} in reverse")
 
 #Loop function to iterate and print each character in reverse
-i = -1
-while(i>=len(a)):
+#Loop function to iterate and print each character in reverse
+i = len(a)-1
+while(i>=0):
     print(a[i])
-    i=i+1
+    i-=1
 
 
