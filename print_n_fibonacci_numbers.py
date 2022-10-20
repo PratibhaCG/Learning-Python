@@ -1,15 +1,16 @@
 # Enter a numeric value
-a = int(input("Enter a number: "))
-print(f"You've entered <{a}>")
+#a = int(input("Enter a number: "))
+#print(f"You've entered <{a}>")
 
 # Ask for the number of times to be printed
 b = int(input("How many fibonacci numbers you wish to print?\n"))
 
 # Print statement
-print(f"Printing {b} fibonacci numbers after {a}")
+print(f"Printing {b} fibonacci numbers")
 
 # Printing the output
-n1, n2 = 0, 1
+n0 = 0
+n1 = 1
 if b < 0:
     print("Incorrect input")
 
@@ -28,9 +29,9 @@ elif b == 1:
 
 
 else:
-   for i in range(0, b):
-       c = a + n2
-       a = n2
-       n2 = c
+   for i in range(b-1):
+       n = n0 + n1
+       n0 = n1
+       n1 = n
        i += 1
-       print (c)
+       print (n)
